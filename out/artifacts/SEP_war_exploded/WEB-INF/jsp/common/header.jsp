@@ -66,17 +66,19 @@
 <header>
     <div>
         <!-- header -->
-        <div class="header fixed-top border-3 border-top border-primary" style="height:90px;">
+<%--        <div class="header fixed-top border-3 border-top border-primary" style="height:90px;">--%>
+        <%--test code--%>
+            <div class="header fixed-top border-top" style="height:90px; border-bottom: none">
             <!-- navigation start -->
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-default" >
-                    <a class="navbar-brand" style="color:#ff5938" href="main.jpt"><h2>SW Rest</h2></a>
+                    <a class="navbar-brand" style="color:#ff5938" href="main.jpt"><h2>K-forest</h2></a>
                     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false"
                             aria-label="Toggle navigation">
-                        <span class="icon-bar top-bar mt-0"></span>
-                        <span class="icon-bar middle-bar"></span>
-                        <span class="icon-bar bottom-bar"></span>
+                        <span class="icon-bar top-bar mt-0" style="background: black"></span>
+                        <span class="icon-bar middle-bar" style="background: black"></span>
+                        <span class="icon-bar bottom-bar" style="background: black"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbar-default">
                         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
@@ -86,7 +88,7 @@
                         </button>
                         <ul class="navbar-nav ms-auto me-lg-3">
                             <li class="header-btn" style="margin-right: 10px;">
-                                <p style="font-family: 'Noto Serif KR', serif;"><a class="btn btn-lg btn-info" href="userReservationInfo.jpt">마이페이지</a></p>
+                                <p style="font-family: 'Monospaced', serif;"><a class="btn btn-lg btn-dark" href="userReservationInfo.jpt">MY_ROOM</a></p>
                             </li>
                             <li class="header-btn">
                                 <div id="login"></div>
@@ -108,11 +110,11 @@
         var list = $('#login');
         var a = '';
         if (user==null){//미로그인 상태
-            a+= '<button id="login" class="btn btn-lg btn-info" style="font-family: \'Noto Serif KR\', serif;" onclick="goToLoginPage();">로그인</button>';
+            a+= '<button id="login" class="btn btn-lg btn-dark" style="font-family: \'Monospaced\', serif;" onclick="goToLoginPage();">Login</button>';
         }
         else {//로그인 상태
             // alert(user.type+'의 접속');
-                a+= '<button id="logout" class="btn btn-lg btn-dark" style="font-family: \'Noto Serif KR\', serif;" onclick="logout()">로그아웃</button>';
+                a+= '<button id="logout" class="btn btn-lg btn-dark" style="font-family: \'Monospaced\', serif;" onclick="logout()">Logout</button>';
         }
         list.append(a);
     }

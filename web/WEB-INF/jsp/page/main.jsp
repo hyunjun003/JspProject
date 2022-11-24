@@ -47,7 +47,7 @@
                     <h1 class="m-b-20"><strong>Your customers will love you <br> one minute from now.</strong></h1>
                     <p class="m-b-40">See how your users experience your website in realtime or view <br> trends to
                         see any changes in performance over time.</p>
-                    <p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Get Started</a></p>
+                    <p><a class="btn btn-lg btn-circle btn-outline-new-white" href="fileupload.jpt">Get Started</a></p>
                 </div>
             </div>
         </div>
