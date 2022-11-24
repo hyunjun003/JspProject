@@ -5,7 +5,7 @@
   <link href="sticky-footer-navbar.css" rel="stylesheet">
 </head>
 <body>
-<%@include file="../common/header.jsp" %>
+<%@include file="../../common/header.jsp" %>
 <p>error page</p>
 </body>
 </html>

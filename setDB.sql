@@ -38,6 +38,21 @@ create table reservations(
                              PRIMARY KEY (reserv_id)
 )ENGINE = InnoDB AUTO_INCREMENT = 1 ROW_FORMAT = DEFAULT CHARACTER SET utf8;
 
+create table file_management(
+                            `id` int(10) NOT NULL AUTO_INCREMENT,
+							`user_id` varchar(100) NOT NULL,
+							`uploadFile` varchar(100) NOT NULL,
+							`newFileName` varchar(100) NOT NULL,
+							`upload_time` date NOT NULL,
+							`savePath` varchar(100) NOT NULL,
+							`folder` varchar(100) NOT NULL,
+							`uploaded` varchar(10) NOT NULL DEFAULT 'false',
+                            
+							PRIMARY KEY (`id`)
+)ENGINE = InnoDB AUTO_INCREMENT = 1 ROW_FORMAT = DEFAULT CHARACTER SET utf8;
+
+
+
 #users
 insert into users value(0, 'ham', '0000',
                         '1111'); -- name : user1, id : 1234, pw : qwer
