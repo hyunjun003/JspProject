@@ -13054,7 +13054,7 @@ img.img-shadow,
     .header,
     .header.header-small,
     .header.header-transparent {
-        background: #FFFFFF;
+        background: #fff;
         border-bottom: 1px solid rgba(240, 240, 240, .8);
     }
 
@@ -13417,7 +13417,7 @@ img.img-shadow,
     left: 0;
     top: 0;
 }
-/*워프 포인트*/
+
 .overlay-background.overlay-gradient {
     background: #505cfd;
     background: linear-gradient(to left, #00dbde, #505cfd);

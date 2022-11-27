@@ -10,6 +10,6 @@ public class viewPageAction implements Action {
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
-        return "RequestDispatcher:jsp/page/viewPage.jsp";
+        return "RequestDispatcher:jsp/page/file/viewPage.jsp";
     }
 }

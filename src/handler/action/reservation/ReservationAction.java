@@ -12,7 +12,7 @@ public class ReservationAction implements Action {
         HttpSession session = request.getSession();
         if(session.getAttribute("user") == null) { //로그인하지 않은 사용자의 경우에만 로그인 페이지를 띄워줌
             request.setAttribute("error", "로그인이 필요한 서비스 입니다.");
-            return "RequestDispatcher:jsp/page/login.jsp";
+            return "RequestDispatcher:jsp/page/user/login.jsp";
         }
         else{
 //            System.out.println("ReAction 실행되었습니다.");

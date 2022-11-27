@@ -17,7 +17,7 @@ public class Index extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         try {
-            request.getRequestDispatcher("WEB-INF/jsp/main/main.jsp").forward(request, response);
+            request.getRequestDispatcher("WEB-INF/jsp/page/main.jsp").forward(request, response);
         } catch(Exception ex) {
             throw new ServletException(ex.getMessage(), ex);
         }
