@@ -57,61 +57,62 @@
     <script src="../../../assets/js/theme.min.js"></script>
 </head>
 <body class="bg-light">
-<%@include file="../../jsp/common/header.jsp"%>
-<main>
-
-    <%--로그인 완료시 error page 대신 이미 로그인되었다는 modal 띄우기--%>
-    <%--                class="w-100 btn btn-lg btn-dark" style="font-family: 'Noto Serif KR', serif;"--%>
-    <%--        onclick="button()"--%>
-    <%--    </form>--%>
-    <div class="container">
-        <form>
-            <div>
-                <section class="module-cover parallax text-center fullscreen"
-                         data-background="assets/images/module-5.jpg" data-overlay="0.6">
-                    <div class="m-b-20 py-5 text-center" style="margin-bottom: 25px; margin-top: 210px;">
-                        <h3>로그인</h3>
+<%@include file="../common/header.jsp"%>
+<!-- Wrapper-->
+<div class="wrapper">
+    <!-- Hero-->
+    <section class="module-cover parallax text-center fullscreen" data-background="assets/images/module-5.jpg" data-overlay="0.6">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 m-auto">
+                    <div class="m-b-20">
+                        <h6>Sign into your account</h6>
                     </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6 m-auto">
-                                <div class="m-b-20">
-                                    <form method="post">
-                                        <div class="form-group">
-                                            <input class="form-control" type="text" placeholder="아이디"
-                                                   id="floatingInput">
-                                        </div>
-                                        <div class="form-group">
-                                            <input class="form-control" type="password" placeholder="패스워드"
-                                                   id="floatingPassword">
-                                        </div>
-
-                                        <div class="form-group" style="margin-top:5px">
-                                            <button class="btn btn-block btn-round btn-brand bg-black" type="button"
-                                                    id="lo_button">Login
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="m-b-20">
-                                    <p><small>계정이 없습니까?<a href="signupPage.jpt">회원가입</a></small></p>
-                                </div>
+                    <div class="m-b-20">
+                        <form method="post">
+                            <div class="form-group">
+                                <input class="form-control" type="email" placeholder="text" id="floatingInput">
                             </div>
-                        </div>
+                            <div class="form-group">
+                                <input class="form-control" type="password" placeholder="Password" id="floatingPassword">
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-block btn-round btn-brand" type="submit" id="lo_button">Login</button>
+                            </div>
+                        </form>
                     </div>
-                </section>
+                    <div class="m-b-20">
+                        <p><small>Dont have an account yet? <a href="#">Create account</a><br>Forgot your username or password? <a href="#">Recover account</a></small></p>
+                    </div>
+                </div>
             </div>
-        </form>
+        </div>
+    </section>
+    <%@include file="../common/footer.jsp"%>
+</div>
+<!-- Wrapper end-->
+<!-- Off canvas-->
+<div class="off-canvas-sidebar">
+    <div class="off-canvas-sidebar-wrapper">
+        <div class="off-canvas-header"><a class="off-canvas-close" href="#"><span class="ti-close"></span></a></div>
+        <div class="off-canvas-content">
+        </div>
     </div>
-</main>
+</div>
+<!-- Off canvas end-->
 
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!-- To top button--><a class="scroll-top" href="#top"><i class="fas fa-angle-up"></i></a>
+
+<!-- Scripts-->
+<script src="assets/js/custom/jquery.min.js"></script>
+<script src="assets/js/custom/popper.min.js"></script>
+<script src="assets/js/bootstrap/bootstrap.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0rANX07hh6ASNKdBr4mZH0KZSqbHYc3Q"></script>
+<script src="assets/js/custom/plugins.min.js"></script>
+<script src="assets/js/custom/custom.min.js"></script>
 </body>
 
 <script>
-
     $(document).ready(function () { //이 파일이 시작되면 자동으로 실행됩니다.
         errorAlert();
     })

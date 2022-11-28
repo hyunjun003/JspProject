@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
 
     String user = (String) session.getAttribute("user");
@@ -77,67 +77,97 @@
         img {
             size: auto;
         }
+        .height span{
+            position: absolute;
+        }
+        
     </style>
 </head>
-<header>
-    <div>
-        <!-- header -->
-<%--        <div class="header fixed-top border-3 border-top border-primary" style="height:90px;">--%>
-        <%--test code--%>
-            <div class="header fixed-top border-top" style="height:90px; border-bottom: none">
-            <!-- navigation start -->
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-default" >
-                    <a class="navbar-brand" style="color:#ff5938" href="main.jpt"><h2>K-forest</h2></a>
-                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                        <span class="icon-bar top-bar mt-0" style="background: black"></span>
-                        <span class="icon-bar middle-bar" style="background: black"></span>
-                        <span class="icon-bar bottom-bar" style="background: black"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbar-default">
-                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false"
-                                aria-label="Toggle navigation">
-                            <i class="fas fa-times"></i>
-                        </button>
-                        <ul class="navbar-nav ms-auto me-lg-3">
-                            <li class="header-btn" style="margin-right: 10px;">
-                                <p style="font-family: 'Monospaced', serif;"><a class="btn btn-lg btn-dark" href="userReservationInfo.jpt">MY_ROOM</a></p>
-                            </li>
-                            <li class="header-btn">
-                                <div id="login"></div>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+<!-- Header-->
+<header class="header header-transparent">
+    <div class="container-fluid">
+        <!-- Brand-->
+        <div class="inner-header"><a class="inner-brand" href="main.jpt">K_gu</a></div>
+        <!-- Navigation-->
+        <div class="inner-navigation collapse">
+            <div class="inner-nav">
+                <ul>
+                    <li class="menu-item-has-children menu-item-has-mega-menu"><a href="#"><span class="menu-item-span">Home</span></a>
+                        <div class="mega-menu">
+                            <ul class="sub-menu mega-menu-row" data-background="assets/images/menu-3.jpg">
+                                <!-- Column 1-->
+                                <li class="menu-item-has-children mega-menu-col"><a href="#">Multi Page</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="detail.jpt">detail</a></li>
+                                        <li><a href="in.jpt">in</a></li>
+                                        <li><a href="default.jpt">default</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Column 2-->
+                                <li class="menu-item-has-children mega-menu-col"><a href="#">One Page</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Demo</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu-item-has-children menu-item-has-mega-menu"><a href="#"><span class="menu-item-span">Pages</span></a>
+                        <div class="mega-menu">
+                            <ul class="sub-menu mega-menu-row" data-background="assets/images/menu-1.jpg">
+                                <!-- Column 1-->
+                                <li class="menu-item-has-children mega-menu-col"><a href="#">Pages 1</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Demo2</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Column 2-->
+                                <li class="menu-item-has-children mega-menu-col"><a href="#">Pages 2</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Demo3</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <!-- navigation close -->
+        </div>
+        <div class="extra-nav">
+            <ul>
+                <li><a href="loginPage.jpt" id="login"></a></li>
+                <li><a class="off-canvas-open" href="#"><span class="menu-item-span"><i class="ti-menu"></i></span></a>
+                </li>
+                <li class="nav-toggle"><a href="#" data-toggle="collapse" data-target=".inner-navigation"><span
+                        class="menu-item-span"><i class="ti-menu"></i></span></a></li>
+            </ul>
         </div>
     </div>
 </header>
+<!-- Header end-->
 <script>
-    $(document).ready(function(){ //이 파일이 시작되면 자동으로 실행됩니다.
+    $(document).ready(function () { //이 파일이 시작되면 자동으로 실행됩니다.
         loginInfo();
     })
-    function loginInfo(){ //로그인 여부에 따라 버튼을 바꿔주는 역할
+
+    function loginInfo() { //로그인 여부에 따라 버튼을 바꿔주는 역할
         var user = <%=user%>;
         var list = $('#login');
         var a = '';
-        if (user==null){//미로그인 상태
-            a+= '<button id="login" class="btn btn-lg btn-dark" style="font-family: \'Monospaced\', serif;" onclick="goToLoginPage();">Login</button>';
-        }
-        else {//로그인 상태
+        if (user == null) {//미로그인 상태
+            a += '<span id="login" style="font-family: \'Monospaced\', serif;" onclick="goToLoginPage();">Login</span>';
+        } else {//로그인 상태
             // alert(user.type+'의 접속');
-                a+= '<button id="logout" class="btn btn-lg btn-dark" style="font-family: \'Monospaced\', serif;" onclick="logout()">Logout</button>';
+            a += '<span id="logout" style="font-family: \'Monospaced\', serif;" onclick="lSystem.out.println("LogoutAction");ogout()">Logout</span>';
         }
         list.append(a);
     }
-    function goToLoginPage(){
-        location.href='loginPage.jpt';
+
+    function goToLoginPage() {
+        location.href = 'loginPage.jpt';
     }
-    function logout(){
-        location.href='logout.jpt';
+
+    function logout() {
+        location.href = 'logout.jpt';
     }
 </script>

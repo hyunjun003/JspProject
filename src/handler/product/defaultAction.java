@@ -1,13 +1,13 @@
-package handler.test;
+package handler.product;
 
 import common.controller.Action;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class inAction implements Action {
+public class defaultAction implements Action {
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
-        return "RequestDispatcher:jsp/product_in_layout.jsp";
+        return "RequestDispatcher:jsp/product/product_layout.jsp";
     }
 }

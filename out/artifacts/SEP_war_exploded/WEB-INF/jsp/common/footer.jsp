@@ -1,19 +1,81 @@
-
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!-- FOOTER -->
-<head>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap" rel="stylesheet">
-</head>
-<footer>
-<%-- 따로 링크 넣을 info나 SNS 링크 없으니 팀플 역할 분담 내용으로
- 여백 채워도 좋을 것 같습니다. --%>
-<h3>footer</h3>
+<!-- Footer-->
+<footer class="footer">
+  <div class="footer-widgets">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <!-- Text widget-->
+          <aside class="widget widget-text">
+            <div class="widget-title">
+              <h6>About Us</h6>
+            </div>
+            <div class="textwidget">
+              <p>Map where your photos were taken and discover local points of interest. Map where your photos.</p>
+              <p>
+                Location: 12 London Avenue, Suite 18<br>
+                E-mail: support@theme.com<br>
+                Phone: 8 800 123 4567<br>
+              </p>
+              <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+        <div class="col-md-3">
+          <!-- Recent entries widget-->
+          <aside class="widget widget-recent-entries">
+            <div class="widget-title">
+              <h6>Recent Posts</h6>
+            </div>
+            <ul>
+              <li><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">May 8, 2018</span></li>
+              <li><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">April 7, 2018</span></li>
+              <li><a href="#">Map where your photos were taken and discover local points.</a><span class="post-date">September 7, 2018</span></li>
+            </ul>
+          </aside>
+        </div>
+        <div class="col-md-3">
+          <!-- Twitter widget-->
+          <aside class="widget twitter-feed-widget">
+            <div class="widget-title">
+              <h6>Twitter Feed</h6>
+            </div>
+            <div class="twitter-feed" data-twitter="double_theme" data-number="1"></div>
+          </aside>
+        </div>
+        <div class="col-md-3">
+          <!-- Recent works-->
+          <aside class="widget widget-recent-works">
+            <div class="widget-title">
+              <h6>Portfolio</h6>
+            </div>
+            <ul>
+              <li><a href="#"><img src="assets/images/widgets/1.jpg" alt=""></a></li>
+              <li><a href="#"><img src="assets/images/widgets/2.jpg" alt=""></a></li>
+              <li><a href="#"><img src="assets/images/widgets/3.jpg" alt=""></a></li>
+              <li><a href="#"><img src="assets/images/widgets/7.jpg" alt=""></a></li>
+              <li><a href="#"><img src="assets/images/widgets/8.jpg" alt=""></a></li>
+              <li><a href="#"><img src="assets/images/widgets/6.jpg" alt=""></a></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright">
+            <p>2022 jsp project made by hyeonjun<a href="#">Ham's git</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/custom/jquery.min.js"></script>
-<script src="assets/js/custom/popper.min.js"></script>
-<script src="assets/js/bootstrap/bootstrap.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0rANX07hh6ASNKdBr4mZH0KZSqbHYc3Q"></script>
-<script src="assets/js/custom/plugins.min.js"></script>
-<script src="assets/js/custom/custom.min.js"></script>
+<!-- Footer end-->
