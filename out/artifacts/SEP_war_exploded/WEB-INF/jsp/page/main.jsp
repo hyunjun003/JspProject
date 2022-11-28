@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Boomerang - Template</title>
+    <title>Jsp Project</title>
     <!-- Favicons-->
     <link rel="shortcut icon" href="assets/images/favicon.png">
     <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
@@ -44,7 +44,7 @@
                         <div class="col-md-12">
                             <h1 class="m-b-20"><strong>Trend clothes</strong></h1>
                             <p class="m-b-40">Trendy style<br>트렌드의 시작</p>
-                            <p><a class="btn btn-lg btn-circle btn-warning" href="default.jpt">Get Started</a></p>
+                            <p><a class="btn btn-lg btn-circle btn-warning" href="in.jpt">Get Started</a></p>
                         </div>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
                         <div class="col-md-12">
                             <h1 class="m-b-20"><strong>Now is All<br>지금 구매하세요</strong></h1>
                             <p class="m-b-40">정확한 검수로<br>안전한 거래</p>
-                            <p><a class="btn btn-lg btn-circle btn-brand" href="default.jpt">Get products</a>
+                            <p><a class="btn btn-lg btn-circle btn-brand" href="in.jpt">Get products</a>
                         </div>
                     </div>
                 </div>
@@ -292,43 +292,7 @@
     <%@include file="../common/footer.jsp"%>
 </div>
 <!-- Wrapper end-->
-<!-- Off canvas-->
-<div class="off-canvas-sidebar">
-    <div class="off-canvas-sidebar-wrapper">
-        <div class="off-canvas-header"><a class="off-canvas-close" href="#"><span class="ti-close"></span></a></div>
-        <div class="off-canvas-content">
-            <!-- Text widget-->
-            <aside class="widget widget-text">
-                <div class="textwidget">
-                    <p class="text-center"><img src="assets/images/logo-light-2.png" alt="" width="80px"></p>
-                    <p class="text-center">See how users experience your website in realtime to see changes.</p>
-                </div>
-            </aside>
-            <!-- Recent portfolio widget-->
-            <aside class="widget widget-recent-works">
-                <ul>
-                    <li><a href="#"><img src="assets/images/widgets/1.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="assets/images/widgets/2.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="assets/images/widgets/3.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="assets/images/widgets/4.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="assets/images/widgets/5.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="assets/images/widgets/6.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="assets/images/widgets/7.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="assets/images/widgets/8.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="assets/images/widgets/9.jpg" alt=""></a></li>
-                </ul>
-            </aside>
-            <!-- Social Icons-->
-            <ul class="social-icons text-center">
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-<!-- Off canvas end-->
+<%@include file="../common/offCanvas.jsp"%>
 
 <!-- To top button--><a class="scroll-top" href="#top"><i class="fas fa-angle-up"></i></a>
 
