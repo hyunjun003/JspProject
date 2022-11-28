@@ -20,7 +20,12 @@
     <link href="assets/css/template.css" rel="stylesheet">
 </head>
 <body>
+<%
 
+    String inDetail = (String) request.getAttribute("inDetail");
+    System.out.println(inDetail);
+
+%>
 <!-- Preloader-->
 <div class="page-loader">
     <div class="page-loader-inner">
@@ -58,9 +63,10 @@
                     <h6 class="text-special text-center m-b-40">Multi Page Demos</h6>
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="demo-item"><a href="detail.jpt"><img src="assets/images/demo/1.jpg" alt=""></a>
-                                <h6>예시</h6>
-                            </div>
+                            <div id="detail_content"></div>
+<%--                            <div class="demo-item"><a href="detail.jpt"><img src="assets/images/demo/1.jpg" alt=""></a>--%>
+<%--                                <h6>예시</h6>--%>
+<%--                            </div>--%>
                         </div>
 
                     </div>
@@ -84,6 +90,26 @@
 <%@include file="../common/offCanvas.jsp"%>
 <!-- To top button--><a class="scroll-top" href="#top"><i class="fas fa-angle-up"></i></a>
 
+
+
+<script>
+    $(document).ready(function (){ // 이부분이 있어야 js의 function이 디폴트로 시작됨
+        makeBoard();
+    })
+
+    // start make left board리
+    function makeBoard(){
+        var inDetail = <%=inDetail%>;
+        var data = $('#detail_content');
+        var text = '';
+        text += '<div class="demo-item"><a href="detail.jpt"><img src="'+inDetail.product_pic+'" alt=""></a><h6>'+inDetail.product_name+'</h6></div>';
+        data.append(text);
+    }
+</script>
+
+
+
+
 <!-- Scripts-->
 <script src="assets/js/custom/jquery.min.js"></script>
 <script src="assets/js/custom/popper.min.js"></script>
@@ -91,5 +117,7 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0rANX07hh6ASNKdBr4mZH0KZSqbHYc3Q"></script>
 <script src="assets/js/custom/plugins.min.js"></script>
 <script src="assets/js/custom/custom.min.js"></script>
+
 </body>
+
 </html>

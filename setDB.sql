@@ -51,17 +51,14 @@ create table file_management(
 )ENGINE = InnoDB AUTO_INCREMENT = 1 ROW_FORMAT = DEFAULT CHARACTER SET utf8;
 
 create table products(
-                             reserv_id INT NOT NULL AUTO_INCREMENT,
-							 reserv_user varchar(50) NOT NULL,
-							 reserv_userId INT NOT NULL,
-                             reserv_date varchar(50) NOT NULL,
-                             reserv_time INT NOT NULL,
-                             reserv_NOP INT NOT NULL,
-                             reserv_table_num INT NOT NULL,
-                             r_code INT NOT NULL,
+                             product_id INT NOT NULL AUTO_INCREMENT,
+							 product_page varchar(50) NOT NULL,
+							 product_pic INT NOT NULL,
+                             product_name varchar(50) NOT NULL,
+                             uploaded_time INT NOT NULL,
                              -- arriusersved_at TIMESTAMP DEFAULT '0000-00-00 00:00:00',
                              
-                             PRIMARY KEY (reserv_id)
+                             PRIMARY KEY (product_id)
 )ENGINE = InnoDB AUTO_INCREMENT = 1 ROW_FORMAT = DEFAULT CHARACTER SET utf8;
 
 

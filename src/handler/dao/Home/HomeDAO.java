@@ -3,6 +3,7 @@ package handler.dao.Home;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import common.sql.Config;
+import handler.dto.Home.TextDTO;
 import handler.dto.Home.UserDTO;
 import org.apache.commons.dbutils.DbUtils;
 import org.apache.commons.dbutils.QueryRunner;
@@ -155,6 +156,26 @@ public class HomeDAO {
         } finally {
             DbUtils.closeQuietly(conn);
         }
+    }
+    public TextDTO getText() {//products 모든 부분을 DB에서 가져오는 부분
+        List<Map<String, Object>> listOfMaps = null;
+        Connection conn = Config.getInstance().sqlLogin();
+        String fail;
+        try {
+            QueryRunner queryRunner = new QueryRunner();
+            listOfMaps = queryRunner.query(conn,"SELECT * FROM products;", new MapListHandler());
+        } catch(SQLException se) {
+            se.printStackTrace();
+        } finally {
+            DbUtils.closeQuietly(conn);
+        }
+        Gson gson = new Gson();
+        ArrayList<TextDTO> selected = gson.fromJson(gson.toJson(listOfMaps), new TypeToken<List<TextDTO>>() {}.getType());
+        if(selected.size()>0) {
+            return selected.get(0);
+        }
+        else
+            return null;
     }
 
 

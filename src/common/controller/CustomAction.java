@@ -1,7 +1,12 @@
 package common.controller;
 
+import com.google.gson.Gson;
+import handler.dao.Home.HomeDAO;
+import handler.dto.Home.UserDTO;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * [중요] 21-07-07자로 생긴 개념입니다.
@@ -34,6 +39,19 @@ import javax.servlet.http.HttpServletResponse;
 public class CustomAction implements Action{
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
+        Gson gson = new Gson();
+        HttpSession session = request.getSession(true);
+        String num= request.getParameter("num"); //현재 페이지의 num을 전달받음
+        if(num==null){
+            num="0";
+        }
+        request.setAttribute("num", gson.toJson(num));
+        /**
+         * 다음 설정은 JSP의 taglib에서 Java -> JSON으로 바로 접근이 가능하게 처리해줍니다.
+         * 예를들어 Java에서 type.for_header라고 하는 경우 JSON의 for_header의 키값으로 인식하여 바로 즉시 접근이 가능하게 도와줍니다.
+         * */
+        String user = (String) request.getSession().getAttribute("user");
+        request.setAttribute("user",gson.fromJson(user, UserDTO.class));
         return null;
     }
 }
