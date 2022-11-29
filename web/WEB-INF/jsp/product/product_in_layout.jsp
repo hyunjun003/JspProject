@@ -18,6 +18,7 @@
     <link href="../../../assets/css/plugins.min.css" rel="stylesheet">
     <!-- Template core CSS-->
     <link href="../../../assets/css/template.css" rel="stylesheet">
+
 </head>
 <body>
 <%
@@ -95,16 +96,18 @@
 <script>
     $(document).ready(function (){ // 이부분이 있어야 js의 function이 디폴트로 시작됨
         makeBoard();
+        console.log("ready");
     })
 
     // start make left board리
-    function makeBoard(){
+    function makeBoard() {
         var inDetail = <%=inDetail%>;
         var data = $('#detail_content');
         var text = '';
-        text += '<div class="demo-item"><a href="'+inDetail.product_page+'"><img src="'+inDetail.product_pic+'" alt=""></a><h6>'+inDetail.product_name+'</h6></div>';
+        text += '<div class="demo-item"><a href="' + inDetail.product_id === 3 + '"><img src="' + inDetail.product_pic + '" alt=""></a><h6>' + inDetail.product_name + '</h6></div>';
         data.append(text);
     }
+
 </script>
 
 

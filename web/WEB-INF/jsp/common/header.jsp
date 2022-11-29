@@ -34,6 +34,7 @@
     <link href="../../../assets/css/plugins.min.css" rel="stylesheet">
     <!-- Template core CSS-->
     <link href="../../../assets/css/template.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
     <title>jspProject</title>
     <style>
         img {
