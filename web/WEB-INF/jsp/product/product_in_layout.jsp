@@ -65,11 +65,10 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div id="detail_content"></div>
-<%--                            <div class="demo-item"><a href="detail.jpt"><img src="assets/images/demo/1.jpg" alt=""></a>--%>
-<%--                                <h6>예시</h6>--%>
-<%--                            </div>--%>
                         </div>
-
+                        <div class="col-md-6">
+                            <div id="detail_content2"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -95,17 +94,37 @@
 
 <script>
     $(document).ready(function (){ // 이부분이 있어야 js의 function이 디폴트로 시작됨
+        makeBoard2();
         makeBoard();
-        console.log("ready");
     })
 
     // start make left board리
     function makeBoard() {
+        console.log("makeBoard aceept")
         var inDetail = <%=inDetail%>;
         var data = $('#detail_content');
         var text = '';
-        text += '<div class="demo-item"><a href="' + inDetail.product_id === 3 + '"><img src="' + inDetail.product_pic + '" alt=""></a><h6>' + inDetail.product_name + '</h6></div>';
-        data.append(text);
+        for (var i = 0; i<inDetail.length; i++){
+            if (i%2===0){
+                text += '<div class="demo-item"><a href="'+inDetail[i].product_page+'"><img src="'+inDetail[i].product_pic+'" alt=""></a><h6>'+inDetail[i].product_name+'</h6></div>';
+                console.log(i)
+                text = '';
+            }
+        }
+
+    }
+    function makeBoard2() {
+        var inDetail = <%=inDetail%>;
+        var data = $('#detail_content2');
+        var text = '';
+        for (var i = 0; i<inDetail.length; i++){
+            if (i%2!==0){
+                text += '<div class="demo-item"><a href="'+inDetail[i].product_page+'"><img src="'+inDetail[i].product_pic+'" alt=""></a><h6>'+inDetail[i].product_name+'</h6></div>';
+                data.append(text);
+                text='';
+            }
+        }
+
     }
 
 </script>

@@ -70,6 +70,5 @@ insert into users value(0, 'ureservationsser2', '5678',
 
 insert into products value(1, 'main.jpt', 'assets/images/demo/op-1.jpg', 'one products', '11');
 -- id, page, picture, name, time
-insert into products value(2, 'main.jpt', 'assets/images/demo/op-2.jpg', 'two products', '12');
-insert into products value(3, 'main.jpt', 'assets/images/demo/op-24.jpg', 'three products', '13');
+
 
