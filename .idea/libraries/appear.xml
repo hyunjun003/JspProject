@@ -1,0 +1,32 @@
+<component name="libraryTable">
+  <library name="appear" type="kotlin.js">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/web/assets/js/custom/appear.js" />
+      <root url="file://$PROJECT_DIR$/web/assets/js/custom/custom.js" />
+      <root url="file://$PROJECT_DIR$/web/assets/js/custom/custom.min.js" />
+      <root url="file://$PROJECT_DIR$/web/assets/js/custom/gmap3.js" />
+      <root url="file://$PROJECT_DIR$/web/assets/js/custom/imagesloaded.pkgd.js" />
+      <root url="file://$PROJECT_DIR$/web/assets/js/custom/isotope.pkgd.js" />
+      <root url="file://$PROJECT_DIR$/web/assets/js/custom/jarallax-video.js" />
+      <root url="file://$PROJECT_DIR$/web/assets/js/custom/jarallax.js" />
+      <root url="file://$PROJECT_DIR$/web/assets/js/custom/jqBootstrapValidation.js" />
+      <root url="file://$PROJECT_DIR$/web/assets/js/custom/jquery.countTo.js" />
+      <root url="file://$PROJECT_DIR$/web/assets/js/custom/jquery.easypiechart.js" />
+      <root url="file://$PROJECT_DIR$/web/assets/js/custom/jquery.fitvids.js" />
+      <root url="file://$PROJECT_DIR$/web/assets/js/custom/jquery.magnific-popup.js" />
+      <root url="file://$PROJECT_DIR$/web/assets/js/custom/jquery.min.js" />
+      <root url="file://$PROJECT_DIR$/web/assets/js/custom/jquery.singlePageNav.js" />
+      <root url="file://$PROJECT_DIR$/web/assets/js/custom/jquery.sticky-kit.js" />
+      <root url="file://$PROJECT_DIR$/web/assets/js/custom/jquery.superslides.js" />
+      <root url="file://$PROJECT_DIR$/web/assets/js/custom/owl.carousel.js" />
+      <root url="file://$PROJECT_DIR$/web/assets/js/custom/plugins.js" />
+      <root url="file://$PROJECT_DIR$/web/assets/js/custom/plugins.min.js" />
+      <root url="file://$PROJECT_DIR$/web/assets/js/custom/popper.min.js" />
+      <root url="file://$PROJECT_DIR$/web/assets/js/custom/prism.js" />
+      <root url="file://$PROJECT_DIR$/web/assets/js/custom/submenu-fix.js" />
+      <root url="file://$PROJECT_DIR$/web/assets/js/custom/twitterFetcher.js" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

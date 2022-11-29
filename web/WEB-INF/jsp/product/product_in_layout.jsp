@@ -7,17 +7,17 @@
     <meta name="author" content="">
     <title>Boomerang - Template</title>
     <!-- Favicons-->
-    <link rel="shortcut icon" href="assets/images/favicon.png">
-    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="../../../assets/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../../assets/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../../assets/images/apple-touch-icon-114x114.png">
     <!-- Web Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600%7cPlayfair+Display:400i" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <!-- Plugins-->
-    <link href="assets/css/plugins.min.css" rel="stylesheet">
+    <link href="../../../assets/css/plugins.min.css" rel="stylesheet">
     <!-- Template core CSS-->
-    <link href="assets/css/template.css" rel="stylesheet">
+    <link href="../../../assets/css/template.css" rel="stylesheet">
 </head>
 <body>
 <%
@@ -102,7 +102,7 @@
         var inDetail = <%=inDetail%>;
         var data = $('#detail_content');
         var text = '';
-        text += '<div class="demo-item"><a href="detail.jpt"><img src="'+inDetail.product_pic+'" alt=""></a><h6>'+inDetail.product_name+'</h6></div>';
+        text += '<div class="demo-item"><a href="'+inDetail.product_page+'"><img src="'+inDetail.product_pic+'" alt=""></a><h6>'+inDetail.product_name+'</h6></div>';
         data.append(text);
     }
 </script>
@@ -111,12 +111,12 @@
 
 
 <!-- Scripts-->
-<script src="assets/js/custom/jquery.min.js"></script>
-<script src="assets/js/custom/popper.min.js"></script>
-<script src="assets/js/bootstrap/bootstrap.min.js"></script>
+<script src="../../../assets/js/custom/jquery.min.js"></script>
+<script src="../../../assets/js/custom/popper.min.js"></script>
+<script src="../../../assets/js/bootstrap/bootstrap.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0rANX07hh6ASNKdBr4mZH0KZSqbHYc3Q"></script>
-<script src="assets/js/custom/plugins.min.js"></script>
-<script src="assets/js/custom/custom.min.js"></script>
+<script src="../../../assets/js/custom/plugins.min.js"></script>
+<script src="../../../assets/js/custom/custom.min.js"></script>
 
 </body>
 

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="bootstrap" type="kotlin.js">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/web/assets/js/bootstrap/bootstrap.js" />
+      <root url="file://$PROJECT_DIR$/web/assets/js/bootstrap/bootstrap.min.js" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

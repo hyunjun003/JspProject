@@ -53,7 +53,7 @@ create table file_management(
 create table products(
                              product_id INT NOT NULL AUTO_INCREMENT,
 							 product_page varchar(50) NOT NULL,
-							 product_pic INT NOT NULL,
+							 product_pic varchar(50) NOT NULL,
                              product_name varchar(50) NOT NULL,
                              uploaded_time INT NOT NULL,
                              -- arriusersved_at TIMESTAMP DEFAULT '0000-00-00 00:00:00',
@@ -68,21 +68,8 @@ insert into users value(0, 'ham', '0000',
 insert into users value(0, 'ureservationsser2', '5678',
                         'qwer2'); -- name : user2, id : 5678, pw : asdf
 
+insert into products value(1, 'main.jpt', 'assets/images/demo/op-1.jpg', 'one products', '11');
+-- id, page, picture, name, time
+insert into products value(2, 'main.jpt', 'assets/images/demo/op-2.jpg', 'two products', '12');
+insert into products value(3, 'main.jpt', 'assets/images/demo/op-24.jpg', 'three products', '13');
 
-
-
-#mamangers
-insert into managers value(0, 'manager1', 'admin1',
-                           '25f43b1486ad95a1398e3eeb3d83bc4010015fcc9bedb35b432e00298d5021f7'); -- name : mamanger1, id : admin1, pw : admin1
-insert into managers value(0, 'manager2', 'admin2',
-                           '1c142b2d01aa34e9a36bde480645a57fd69e14155dacfab5a3f9257b77fdc8d8'); -- name : mamanger2, id : admin2, pw : admin2
-
-
- 
- 
-#reservations
-insert into  restaurant_table value (1);
-insert into  restaurant_table value (2);
-insert into  restaurant_table value (3);
-insert into  restaurant_table value (4);
-insert into  restaurant_table value (5);

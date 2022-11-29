@@ -19,59 +19,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap" rel="stylesheet">
 
-    <!-- 2022-05-13 YB ADD -->
-    <!-- Libs CSS -->
-    <link rel="stylesheet" href="../../../assets/libs/ion-rangeslider/css/ion.rangeSlider.min.css">
-    <link rel="stylesheet" href="../../../assets/libs/litepicker/dist/css/litepicker.css">
-    <link rel="stylesheet" href="../../../assets/libs/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../../../assets/libs/magnific-popup/dist/magnific-popup.css">
-
-    <!-- 2022-05-13 YB ADD -->
-    <!-- Theme CSS -->
-    <link rel="stylesheet" href="../../../assets/css/theme.css">
-
-    <!-- Libs JS -->
-    <script src="../../../assets/libs/jquery/dist/jquery.min.js"></script>
-    <script src="../../../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../../../assets/libs/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-    <script src="../../../assets/libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
-    <script src="../../../assets/libs/prismjs/prism.js"></script>
-    <script src="../../../assets/libs/leaflet/dist/leaflet.js"></script>
-    <script src="../../../assets/libs/litepicker/dist/litepicker.js"></script>
-    <script src="../../../assets/libs/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
-    <script src="../../../assets/libs/inputmask/dist/jquery.inputmask.min.js"></script>
-
     <!-- clipboard -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
-
-    <!-- Theme JS -->
-    <script src="../../../assets/js/theme.min.js"></script>
-
-
-    <script src="js/jquery-3.2.1.min.js"></script>
-
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/bootstrap-table.js"></script>
-    <script src="/js/bootstrap-table-cookie.js"></script>
-    <script src="/js/bootstrap-table-export.min.js"></script>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="assets/images/favicon.png">
-    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
     <!-- Web Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600%7cPlayfair+Display:400i" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <!-- Plugins-->
-    <link href="assets/css/plugins.min.css" rel="stylesheet">
+    <link href="../../../assets/css/plugins.min.css" rel="stylesheet">
     <!-- Template core CSS-->
-    <link href="assets/css/template.css" rel="stylesheet">
+    <link href="../../../assets/css/template.css" rel="stylesheet">
     <title>jspProject</title>
     <style>
         img {

@@ -8,17 +8,17 @@
     <meta name="author" content="">
     <title>Jsp Project</title>
     <!-- Favicons-->
-    <link rel="shortcut icon" href="assets/images/favicon.png">
-    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="../../../assets/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../../assets/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../../assets/images/apple-touch-icon-114x114.png">
     <!-- Web Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600%7cPlayfair+Display:400i" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <!-- Plugins-->
-    <link href="assets/css/plugins.min.css" rel="stylesheet">
+    <link href="../../../assets/css/plugins.min.css" rel="stylesheet">
     <!-- Template core CSS-->
-    <link href="assets/css/template.css" rel="stylesheet">
+    <link href="../../../assets/css/template.css" rel="stylesheet">
 </head>
 <body>
 
@@ -102,7 +102,7 @@
                 </div>
                 <div class="portfolio-item digital">
                     <div class="portfolio-item-wrapper">
-                        <div class="portfolio-item-img"><img src="assets/images/portfolio/4.jpg" alt=""></div>
+                        <div class="portfolio-item-img"><img src="../../../assets/images/portfolio/4.jpg" alt=""></div>
                         <div class="portfolio-item-caption">
                             <h6 class="portfolio-item-title">Monochrome</h6><span class="portfolio-item-subtitle serif">Branding</span>
                         </div><a class="portfolio-item-link" href="portfolio-single-1.html"></a>
@@ -110,7 +110,7 @@
                 </div>
                 <div class="portfolio-item packaging">
                     <div class="portfolio-item-wrapper">
-                        <div class="portfolio-item-img"><img src="assets/images/portfolio/3.jpg" alt=""></div>
+                        <div class="portfolio-item-img"><img src="../../../assets/images/portfolio/3.jpg" alt=""></div>
                         <div class="portfolio-item-caption">
                             <h6 class="portfolio-item-title">Ellie Cashman</h6><span class="portfolio-item-subtitle serif">Packaging</span>
                         </div><a class="portfolio-item-link" href="portfolio-single-1.html"></a>
@@ -118,7 +118,7 @@
                 </div>
                 <div class="portfolio-item branding">
                     <div class="portfolio-item-wrapper">
-                        <div class="portfolio-item-img"><img src="assets/images/portfolio/6.jpg" alt=""></div>
+                        <div class="portfolio-item-img"><img src="../../../assets/images/portfolio/6.jpg" alt=""></div>
                         <div class="portfolio-item-caption">
                             <h6 class="portfolio-item-title">White Sleeve</h6><span class="portfolio-item-subtitle serif">Digital</span>
                         </div><a class="portfolio-item-link" href="portfolio-single-1.html"></a>
@@ -126,7 +126,7 @@
                 </div>
                 <div class="portfolio-item digital">
                     <div class="portfolio-item-wrapper">
-                        <div class="portfolio-item-img"><img src="assets/images/portfolio/5.jpg" alt=""></div>
+                        <div class="portfolio-item-img"><img src="../../../assets/images/portfolio/5.jpg" alt=""></div>
                         <div class="portfolio-item-caption">
                             <h6 class="portfolio-item-title">Classic Socks</h6><span class="portfolio-item-subtitle serif">Branding</span>
                         </div><a class="portfolio-item-link" href="portfolio-single-1.html"></a>
@@ -134,7 +134,7 @@
                 </div>
                 <div class="portfolio-item packaging">
                     <div class="portfolio-item-wrapper">
-                        <div class="portfolio-item-img"><img src="assets/images/portfolio/2.jpg" alt=""></div>
+                        <div class="portfolio-item-img"><img src="../../../assets/images/portfolio/2.jpg" alt=""></div>
                         <div class="portfolio-item-caption">
                             <h6 class="portfolio-item-title">Expirience</h6><span class="portfolio-item-subtitle serif">Packaging</span>
                         </div><a class="portfolio-item-link" href="portfolio-single-1.html"></a>
@@ -162,7 +162,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="team-item">
-                        <div class="team-image"><img src="assets/images/team/1.jpg" alt="">
+                        <div class="team-image"><img src="../../../assets/images/team/1.jpg" alt="">
                             <div class="team-wrap">
                                 <div class="team-content">
                                     <h6 class="team-name">Emma Connor</h6>
@@ -181,7 +181,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="team-item">
-                        <div class="team-image"><img src="assets/images/team/2.jpg" alt="">
+                        <div class="team-image"><img src="../../../assets/images/team/2.jpg" alt="">
                             <div class="team-wrap">
                                 <div class="team-content">
                                     <h6 class="team-name">Richard Bauer</h6>
@@ -200,7 +200,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="team-item">
-                        <div class="team-image"><img src="assets/images/team/3.jpg" alt="">
+                        <div class="team-image"><img src="../../../assets/images/team/3.jpg" alt="">
                             <div class="team-wrap">
                                 <div class="team-content">
                                     <h6 class="team-name">John Pope</h6>
@@ -219,7 +219,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="team-item">
-                        <div class="team-image"><img src="assets/images/team/4.jpg" alt="">
+                        <div class="team-image"><img src="../../../assets/images/team/4.jpg" alt="">
                             <div class="team-wrap">
                                 <div class="team-content">
                                     <h6 class="team-name">Sara Smith</h6>
@@ -238,7 +238,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="team-item">
-                        <div class="team-image"><img src="assets/images/team/5.jpg" alt="">
+                        <div class="team-image"><img src="../../../assets/images/team/5.jpg" alt="">
                             <div class="team-wrap">
                                 <div class="team-content">
                                     <h6 class="team-name">Emma Connor</h6>
@@ -257,7 +257,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="team-item">
-                        <div class="team-image"><img src="assets/images/team/6.jpg" alt="">
+                        <div class="team-image"><img src="../../../assets/images/team/6.jpg" alt="">
                             <div class="team-wrap">
                                 <div class="team-content">
                                     <h6 class="team-name">Peter Chapman</h6>
@@ -297,11 +297,11 @@
 <!-- To top button--><a class="scroll-top" href="#top"><i class="fas fa-angle-up"></i></a>
 
 <!-- Scripts-->
-<script src="assets/js/custom/jquery.min.js"></script>
-<script src="assets/js/custom/popper.min.js"></script>
-<script src="assets/js/bootstrap/bootstrap.min.js"></script>
+<script src="../../../assets/js/custom/jquery.min.js"></script>
+<script src="../../../assets/js/custom/popper.min.js"></script>
+<script src="../../../assets/js/bootstrap/bootstrap.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0rANX07hh6ASNKdBr4mZH0KZSqbHYc3Q"></script>
-<script src="assets/js/custom/plugins.min.js"></script>
-<script src="assets/js/custom/custom.min.js"></script>
+<script src="../../../assets/js/custom/plugins.min.js"></script>
+<script src="../../../assets/js/custom/custom.min.js"></script>
 </body>
 </html>

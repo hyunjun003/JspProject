@@ -157,7 +157,7 @@ public class HomeDAO {
             DbUtils.closeQuietly(conn);
         }
     }
-    public TextDTO getText() {//products 모든 부분을 DB에서 가져오는 부분
+    public ArrayList<TextDTO> getText() {//products 모든 부분을 DB에서 가져오는 부분
         List<Map<String, Object>> listOfMaps = null;
         Connection conn = Config.getInstance().sqlLogin();
         String fail;
@@ -172,7 +172,7 @@ public class HomeDAO {
         Gson gson = new Gson();
         ArrayList<TextDTO> selected = gson.fromJson(gson.toJson(listOfMaps), new TypeToken<List<TextDTO>>() {}.getType());
         if(selected.size()>0) {
-            return selected.get(0);
+            return selected;
         }
         else
             return null;
