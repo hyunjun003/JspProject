@@ -1,4 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
 
     String user = (String) session.getAttribute("user");
@@ -121,7 +120,7 @@
             a += '<span id="login" style="font-family: \'Monospaced\', serif;" onclick="goToLoginPage();">Login</span>';
         } else {//로그인 상태
             // alert(user.type+'의 접속');
-            a += '<span id="logout" style="font-family: \'Monospaced\', serif;" onclick="lSystem.out.println("LogoutAction");ogout()">Logout</span>';
+            a += '<span id="logout" style="font-family: \'Monospaced\', serif;" onclick="logout()">Logout</span>';
         }
         list.append(a);
     }

@@ -75,9 +75,10 @@
                     <h6 class="text-special text-center m-b-40">One Page Demos</h6>
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="demo-item"><a href="detail.jpt"><img src="assets/images/demo/op-1.jpg" alt=""></a>
-                                <h6>예시2</h6>
-                            </div>
+                            <div id="detail_content3"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="detail_content4"></div>
                         </div>
                     </div>
                 </div>
@@ -94,20 +95,21 @@
 
 <script>
     $(document).ready(function (){ // 이부분이 있어야 js의 function이 디폴트로 시작됨
-        makeBoard2();
         makeBoard();
+        makeBoard2();
+        makeBoard3();
+        makeBoard4();
     })
-
+    var i = 0;
     // start make left board리
     function makeBoard() {
-        console.log("makeBoard aceept")
         var inDetail = <%=inDetail%>;
         var data = $('#detail_content');
         var text = '';
-        for (var i = 0; i<inDetail.length; i++){
-            if (i%2===0){
-                text += '<div class="demo-item"><a href="'+inDetail[i].product_page+'"><img src="'+inDetail[i].product_pic+'" alt=""></a><h6>'+inDetail[i].product_name+'</h6></div>';
-                console.log(i)
+        for (i = 0; i<inDetail.length; i++){
+            if (i%4===0){
+                text += '<div class="demo-item"><a href="'+inDetail[i].product_page+'?num='+inDetail[i].product_id+'"><img src="'+inDetail[i].product_pic+'" alt=""></a><h6>'+inDetail[i].product_name+'</h6></div>';
+                data.append(text);
                 text = '';
             }
         }
@@ -117,15 +119,41 @@
         var inDetail = <%=inDetail%>;
         var data = $('#detail_content2');
         var text = '';
-        for (var i = 0; i<inDetail.length; i++){
-            if (i%2!==0){
-                text += '<div class="demo-item"><a href="'+inDetail[i].product_page+'"><img src="'+inDetail[i].product_pic+'" alt=""></a><h6>'+inDetail[i].product_name+'</h6></div>';
+        for (i = 0; i<inDetail.length; i++){
+            if (i%4===1){
+                text += '<div class="demo-item"><a href="'+inDetail[i].product_page+'?num='+inDetail[i].product_id+'"><img src="'+inDetail[i].product_pic+'" alt=""></a><h6>'+inDetail[i].product_name+'</h6></div>';
                 data.append(text);
                 text='';
             }
         }
-
     }
+
+    function makeBoard3() {
+        var inDetail = <%=inDetail%>;
+        var data = $('#detail_content3');
+        var text = '';
+        for (i = 0; i<inDetail.length; i++){
+            if (i%4===2){
+                text += '<div class="demo-item"><a href="'+inDetail[i].product_page+'?num='+inDetail[i].product_id+'"><img src="'+inDetail[i].product_pic+'" alt=""></a><h6>'+inDetail[i].product_name+'</h6></div>';
+                data.append(text);
+                text = '';
+            }
+        }
+    }
+
+    function makeBoard4() {
+        var inDetail = <%=inDetail%>;
+        var data = $('#detail_content4');
+        var text = '';
+        for (i = 0; i<inDetail.length; i++){
+            if (i%4===3){
+                text += '<div class="demo-item"><a href="'+inDetail[i].product_page+'?num='+inDetail[i].product_id+'"><img src="'+inDetail[i].product_pic+'" alt=""></a><h6>'+inDetail[i].product_name+'</h6></div>';
+                data.append(text);
+                text = '';
+            }
+        }
+    }
+
 
 </script>
 

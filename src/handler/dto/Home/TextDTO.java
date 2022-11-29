@@ -3,10 +3,6 @@ package handler.dto.Home;
 import org.openxmlformats.schemas.drawingml.x2006.main.STTextIndent;
 
 public class TextDTO {
-    public String product_id;
-    public String product_page;
-    public String product_pic;
-
     public String getProduct_id() {
         return product_id;
     }
@@ -31,6 +27,14 @@ public class TextDTO {
         this.product_pic = product_pic;
     }
 
+    public String getProduct_text() {
+        return product_text;
+    }
+
+    public void setProduct_text(String product_text) {
+        this.product_text = product_text;
+    }
+
     public String getProduct_name() {
         return product_name;
     }
@@ -47,6 +51,10 @@ public class TextDTO {
         this.uploaded_time = uploaded_time;
     }
 
+    public String product_id;
+    public String product_page;
+    public String product_pic;
+    public String product_text;
     public String product_name;
     public String uploaded_time;
 
