@@ -42,24 +42,24 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1 class="m-b-20"><strong>Trend clothes</strong></h1>
-                            <p class="m-b-40">Trendy style<br>트렌드의 시작</p>
-                            <p><a class="btn btn-lg btn-circle btn-warning" href="in.jpt">Get Started</a></p>
+                            <h1 class="m-b-20"><strong>Devices In Use</strong></h1>
+                            <p class="m-b-40">Possession<br>사용중인 기기</p>
+                            <p><a class="btn btn-lg btn-circle btn-warning" href="in.jpt">Get looked</a></p>
                         </div>
                     </div>
                 </div>
             </li>
-            <li class="parallax" data-overlay="0.5"><img src="assets/images/module-1.jpg" alt="">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1 class="m-b-20"><strong>Now is All<br>지금 구매하세요</strong></h1>
-                            <p class="m-b-40">정확한 검수로<br>안전한 거래</p>
-                            <p><a class="btn btn-lg btn-circle btn-brand" href="in.jpt">Get products</a>
-                        </div>
-                    </div>
-                </div>
-            </li>
+<%--            <li class="parallax" data-overlay="0.5"><img src="assets/images/module-1.jpg" alt="">--%>
+<%--                <div class="container">--%>
+<%--                    <div class="row">--%>
+<%--                        <div class="col-md-12">--%>
+<%--                            <h1 class="m-b-20"><strong>Now is All</strong></h1>--%>
+<%--                            <p class="m-b-40">사용<br>경험</p>--%>
+<%--                            <p><a class="btn btn-lg btn-circle btn-brand" href="in.jpt">Get products</a>--%>
+<%--                        </div>--%>
+<%--                    </div>--%>
+<%--                </div>--%>
+<%--            </li>--%>
         </ul>
         <div class="slides-navigation"><a class="prev" href="#"><span class="ti-angle-left"></span></a><a class="next" href="#"><span class="ti-angle-right"></span></a></div>
     </section>
@@ -144,150 +144,6 @@
         </div>
     </section>
     <!-- Portfolio end-->
-
-    <!-- Team-->
-    <section class="module">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 m-auto text-center">
-                    <h1>Creative People</h1>
-                    <p class="lead">Best St.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="space" data-MY="60px"></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="team-item">
-                        <div class="team-image"><img src="../../../assets/images/team/1.jpg" alt="">
-                            <div class="team-wrap">
-                                <div class="team-content">
-                                    <h6 class="team-name">Emma Connor</h6>
-                                    <div class="team-role">Designer</div>
-                                </div>
-                                <div class="team-content-social">
-                                    <ul>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="team-item">
-                        <div class="team-image"><img src="../../../assets/images/team/2.jpg" alt="">
-                            <div class="team-wrap">
-                                <div class="team-content">
-                                    <h6 class="team-name">Richard Bauer</h6>
-                                    <div class="team-role">Developer</div>
-                                </div>
-                                <div class="team-content-social">
-                                    <ul>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="team-item">
-                        <div class="team-image"><img src="../../../assets/images/team/3.jpg" alt="">
-                            <div class="team-wrap">
-                                <div class="team-content">
-                                    <h6 class="team-name">John Pope</h6>
-                                    <div class="team-role">Founder</div>
-                                </div>
-                                <div class="team-content-social">
-                                    <ul>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="team-item">
-                        <div class="team-image"><img src="../../../assets/images/team/4.jpg" alt="">
-                            <div class="team-wrap">
-                                <div class="team-content">
-                                    <h6 class="team-name">Sara Smith</h6>
-                                    <div class="team-role">Designer</div>
-                                </div>
-                                <div class="team-content-social">
-                                    <ul>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="team-item">
-                        <div class="team-image"><img src="../../../assets/images/team/5.jpg" alt="">
-                            <div class="team-wrap">
-                                <div class="team-content">
-                                    <h6 class="team-name">Emma Connor</h6>
-                                    <div class="team-role">Developer</div>
-                                </div>
-                                <div class="team-content-social">
-                                    <ul>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="team-item">
-                        <div class="team-image"><img src="../../../assets/images/team/6.jpg" alt="">
-                            <div class="team-wrap">
-                                <div class="team-content">
-                                    <h6 class="team-name">Peter Chapman</h6>
-                                    <div class="team-role">Founder</div>
-                                </div>
-                                <div class="team-content-social">
-                                    <ul>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="space" data-MY="30px"></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <p class="text-center"><a class="btn btn-circle btn-outline-brand" href="#">About Us</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Team end-->
     <!-- Image end-->
     <%@include file="../common/footer.jsp"%>
 </div>

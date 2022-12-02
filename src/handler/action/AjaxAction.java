@@ -98,6 +98,11 @@ public class AjaxAction implements Action {
             case "addTable":
                 result=TableDAO.getInstance().addTable(data);
                 break;
+            case "modifyText":
+                System.out.println("modifyText Ajax");
+                result=HomeDAO.getInstance().modifyText(data);
+                System.out.println("result is "+result);
+                break;
         }
         return result;
     }

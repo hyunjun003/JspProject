@@ -24,7 +24,6 @@
 <%
 
     String inDetail = (String) request.getAttribute("inDetail");
-    System.out.println(inDetail);
 
 %>
 <!-- Preloader-->
@@ -47,7 +46,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="space" data-mY="60px"></div>
-                    <h1 class="demo-heading">List Page</h1>
+                    <h1 class="demo-heading">My Devices</h1>
                     <div class="space" data-MY="60px"></div>
                 </div>
             </div>
@@ -61,23 +60,25 @@
         <div class="container-fluid" style="max-width: 1600px;">
             <div class="row">
                 <div class="col-md-6">
-                    <h6 class="text-special text-center m-b-40">Multi Page Demos</h6>
                     <div class="row">
                         <div class="col-md-6">
+                            <h6 class="text-special text-center m-b-40">PC</h6>
                             <div id="detail_content"></div>
                         </div>
                         <div class="col-md-6">
+                            <h6 class="text-special text-center m-b-40">Phone</h6>
                             <div id="detail_content2"></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <h6 class="text-special text-center m-b-40">One Page Demos</h6>
                     <div class="row">
                         <div class="col-md-6">
+                            <h6 class="text-special text-center m-b-40">Audio</h6>
                             <div id="detail_content3"></div>
                         </div>
                         <div class="col-md-6">
+                            <h6 class="text-special text-center m-b-40">Accessories</h6>
                             <div id="detail_content4"></div>
                         </div>
                     </div>
@@ -107,7 +108,7 @@
         var data = $('#detail_content');
         var text = '';
         for (i = 0; i<inDetail.length; i++){
-            if (i%4===0){
+            if (inDetail[i].product_id%4===1){
                 text += '<div class="demo-item"><a href="'+inDetail[i].product_page+'?num='+inDetail[i].product_id+'"><img src="'+inDetail[i].product_pic+'" alt=""></a><h6>'+inDetail[i].product_name+'</h6></div>';
                 data.append(text);
                 text = '';
@@ -120,7 +121,7 @@
         var data = $('#detail_content2');
         var text = '';
         for (i = 0; i<inDetail.length; i++){
-            if (i%4===1){
+            if (inDetail[i].product_id%4===2){
                 text += '<div class="demo-item"><a href="'+inDetail[i].product_page+'?num='+inDetail[i].product_id+'"><img src="'+inDetail[i].product_pic+'" alt=""></a><h6>'+inDetail[i].product_name+'</h6></div>';
                 data.append(text);
                 text='';
@@ -133,7 +134,7 @@
         var data = $('#detail_content3');
         var text = '';
         for (i = 0; i<inDetail.length; i++){
-            if (i%4===2){
+            if (inDetail[i].product_id%4===3){
                 text += '<div class="demo-item"><a href="'+inDetail[i].product_page+'?num='+inDetail[i].product_id+'"><img src="'+inDetail[i].product_pic+'" alt=""></a><h6>'+inDetail[i].product_name+'</h6></div>';
                 data.append(text);
                 text = '';
@@ -146,7 +147,7 @@
         var data = $('#detail_content4');
         var text = '';
         for (i = 0; i<inDetail.length; i++){
-            if (i%4===3){
+            if (inDetail[i].product_id%4===0){
                 text += '<div class="demo-item"><a href="'+inDetail[i].product_page+'?num='+inDetail[i].product_id+'"><img src="'+inDetail[i].product_pic+'" alt=""></a><h6>'+inDetail[i].product_name+'</h6></div>';
                 data.append(text);
                 text = '';

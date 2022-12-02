@@ -57,9 +57,11 @@ create table products(
                              product_name varchar(50) NOT NULL,
                              uploaded_time INT NOT NULL,
                              -- arriusersved_at TIMESTAMP DEFAULT '0000-00-00 00:00:00',
-                             
+                             product_text varchar(256),
                              PRIMARY KEY (product_id)
 )ENGINE = InnoDB AUTO_INCREMENT = 1 ROW_FORMAT = DEFAULT CHARACTER SET utf8;
+
+
 
 
 #users
@@ -68,7 +70,17 @@ insert into users value(0, 'ham', '0000',
 insert into users value(0, 'ureservationsser2', '5678',
                         'qwer2'); -- name : user2, id : 5678, pw : asdf
 
-insert into products value(1, 'main.jpt', 'assets/images/demo/op-1.jpg', 'one products', '11');
+insert into products value(1, 'detail.jpt', 'assets/images/demo/op-1.jpg', 'one products', '11', 'dummy texts1');
 -- id, page, picture, name, time
+insert into products value(2, 'detail.jpt', 'assets/images/demo/op-2.jpg', 'two products', '12', 'dummy texts2');
+insert into products value(3, 'detail.jpt', 'assets/images/demo/op-3.jpg', 'three products', '13', 'dummy texts3');
+insert into products value(4, 'detail.jpt', 'assets/images/demo/op-4.jpg', 'four roducts', '13', 'dummy texts4');
+insert into products value(5, 'detail.jpt', 'assets/images/demo/op-5.jpg', 'five products', '13', 'dummy texts5');
+insert into products value(6, 'detail.jpt', 'assets/images/demo/op-6.jpg', 'six products', '13', 'dummy texts6');
+insert into products value(7, 'detail.jpt', 'assets/images/demo/op-7.jpg', 'seven products', '13', 'dummy texts7');
+insert into products value(8, 'detail.jpt', 'assets/images/demo/op-8.jpg', 'eight products', '13', 'dummy texts8');
+insert into products value(9, 'detail.jpt', 'assets/images/demo/op-1.jpg', 'nine products', '13', 'dummy texts9');
+insert into products value(11, 'detail.jpt', 'assets/images/demo/op-1.jpg', 'eleven products', '13', 'dummy texts11');
+
 
 

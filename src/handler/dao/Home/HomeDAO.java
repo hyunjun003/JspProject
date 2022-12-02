@@ -177,6 +177,32 @@ public class HomeDAO {
         else
             return null;
     }
+    public String modifyText(String data) {
+        String arr[]=data.split("-/-/-");
+        String id=arr[0];
+        String title = arr[1];
+        String text = arr[2];
+        System.out.println("title is "+title);
+        System.out.println("text is "+text);
+
+        Connection conn = Config.getInstance().sqlLogin();
+        List<Map<String, Object>> listOfMaps = null;
+        try {
+            QueryRunner queryRunner = new QueryRunner();
+            queryRunner.update(conn,"UPDATE products SET product_name=?, product_text=? WHERE product_id=?;", title ,text ,id);
+            listOfMaps = queryRunner.query(conn, "SELECT * FROM products WHERE product_id=?;",new MapListHandler(),id);
+        } catch (SQLException se) {
+            se.printStackTrace();
+            return "fail";
+        } finally {
+            DbUtils.closeQuietly(conn);
+        }
+        Gson gson = new Gson();
+        ArrayList<TextDTO> selectedList = gson.fromJson(gson.toJson(listOfMaps), new TypeToken<List<TextDTO>>() {}.getType());
+        System.out.println("modifyText selectedList : "+ selectedList);
+        return gson.toJson(selectedList.get(0));
+    }
+
 
 
 }
