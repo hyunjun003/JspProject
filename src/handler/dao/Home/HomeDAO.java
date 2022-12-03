@@ -92,7 +92,7 @@ public class HomeDAO {
         String name = arr[0];
         String id = arr[1];
         String pw = arr[2];
-//        System.out.println("//" + arr[0] + "//" + arr[1] + "//" + arr[2]);
+
         try {
             QueryRunner que = new QueryRunner();
             list = que.query(conn, "SELECT * FROM users WHERE id=?;", new MapListHandler(), id);

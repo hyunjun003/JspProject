@@ -35,10 +35,10 @@
     <session-config>
         <session-timeout>30</session-timeout>
     </session-config>
-    <error-page>
-        <error-code>404</error-code>
-        <location>/WEB-INF/jsp/page/error/error.jsp</location>
-    </error-page>
+<!--    <error-page>-->
+<!--        <error-code>404</error-code>-->
+<!--        <location>/WEB-INF/jsp/page/error/error.jsp</location>-->
+<!--    </error-page>-->
 <!--    <error-page>-->
 <!--        <exception-type>java.lang.Exception</exception-type>-->
 <!--        <location>/WEB-INF/jsp/page/error/errorException.jsp</location>-->

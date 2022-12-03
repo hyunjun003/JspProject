@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Boomerang - Template</title>
+    <title>JspProject</title>
     <!-- Favicons-->
     <link rel="shortcut icon" href="../../../assets/images/favicon.png">
     <link rel="apple-touch-icon" href="../../../assets/images/apple-touch-icon.png">
@@ -22,7 +22,9 @@
 
 <%
     String num = request.getParameter("num");//url에 붙어서 넘어온 product_id를 가져오는 부분 (각 product의 id를 가져온다)
+
     String inDetail = (String) request.getAttribute("inDetail"); //product의 정보를 가져온다.
+    System.out.println(inDetail);
 %>
 
 <body>
@@ -45,7 +47,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>Detail Product</h1>
+                    <a href="in.jpt">
+                        <h1>Detail Product</h1>
+                    </a>
                     <ol class="breadcrumb justify-content-center">
                         <li class="breadcrumb-item"><a href="main.jpt">Home</a></li>
                     </ol>
@@ -71,12 +75,12 @@
                 </div>
                 <%--    text form end--%>
             </div>
-<%--<div class="row container">--%>
-<%--    <textarea class="form-control" id="p_content"></textarea>--%>
-<%--    <script type="text/javascript">--%>
-<%--        CKEDITOR.replace('p_content', {height: 500});--%>
-<%--    </script>--%>
-<%--</div>--%>
+            <%--<div class="row container">--%>
+            <%--    <textarea class="form-control" id="p_content"></textarea>--%>
+            <%--    <script type="text/javascript">--%>
+            <%--        CKEDITOR.replace('p_content', {height: 500});--%>
+            <%--    </script>--%>
+            <%--</div>--%>
 
         </div>
     </section>
@@ -97,22 +101,27 @@
 <script src="../../../assets/js/custom/plugins.min.js"></script>
 <script src="../../../assets/js/custom/custom.min.js"></script>
 <script src="../../../assets/js/sweetalert2'/sweetalert2.all.min.js"></script>
-<script src="../../../assets/js/ckeditor.js" ></script>
-<script src="https://cdn.ckeditor.com/ckeditor5/31.1.0/classic/ckeditor.js"></script>
+<script src="../../../assets/js/ckeditor.js"></script>
+<script src="../../../assets/js/ckeditor5-35/src/ckeditor.js" ></script>
+
 <script>
     $(document).ready(function () {
         makeTextBoard();
         makePictureBoard();
     })
     var num = <%=num%>;
-    var inDetail = <%=inDetail%>
+    var inDetail =
+    <%=inDetail%>
     var text = '';
+    var inNum = inDetail[num - 1].product_id;
+
 
     function makePictureBoard() {
         var pic = $('#insertPic');
-        text += '<p><img src="' + inDetail[num - 1].product_pic + '" alt=""></p>';
+        text += '<p><img src="' + inDetail[num-1].product_pic + '" alt=""></p>';
         pic.append(text)
-        text ='';
+        text = '';
+
     }
 
     function makeTextBoard() {
@@ -126,59 +135,62 @@
 
     function modify() {
         var modify_button = $('#modify_button');
-        var a='';
+        var a = '';
 
         modify_button.empty();
-        a+='<textarea id="t_editor">'+inDetail[num-1].product_name+'</textarea></br>';
-        a+='<textarea id="editor">'+inDetail[num-1].product_text+'</textarea>';
-        a+='<div id="write_post" class="my-4 col-xs-13 text-right d-flex justify-content-between">'
-        a+='<button type="button" class="btn btn-secondary" style = "margin : 2px;" onclick="back()">뒤로</button>'
-        a+='<button type="button" class="btn btn-primary" style = "margin : 2px;" onclick="modifyText()">수정</button>';
-        a+='</div>';
+        a += '<textarea id="t_editor">' + inDetail[num - 1].product_name + '</textarea></br>';
+        a += '<textarea id="editor">' + inDetail[num - 1].product_text + '</textarea>';
+        a += '<div id="write_post" class="my-4 col-xs-13 text-right d-flex justify-content-between">'
+        a += '<button type="button" class="btn btn-secondary" style = "margin : 2px;" onclick="back()">뒤로</button>'
+        a += '<button type="button" class="btn btn-primary" style = "margin : 2px;" onclick="modifyText()">수정</button>';
+        a += '</div>';
         $('#insertText').html(a);
     }
 
-    function back(){
+    function back() {
         swal.fire({
-            title : '뒤로가기',
-            text : '작성한 글은 사라집니다.',
-            icon : 'error',
+            title: '뒤로가기',
+            text: '작성한 글은 사라집니다.',
+            icon: 'error',
             showConfirmButton: true
         }).then(function () {
-            window.location.href = 'detail.jpt?num='+num+'';
+            window.location.href = 'detail.jpt?num=' + num + '';
         });
     }
-    function modifyText(){
-        var modify = inDetail[num-1].product_id+ "-/-/-"+$('#t_editor').val()+"-/-/-"+$('#editor').val();
+
+    function modifyText() {
+        var modify = inDetail[num - 1].product_id + "-/-/-" + $('#t_editor').val() + "-/-/-" + $('#editor').val();
+        console.log(modify)
         $.ajax({
             url: 'ajax.jpt',
-            type : 'post',
-            data :{
-                req : "modifyText",
-                data : modify
+            type: 'post',
+            data: {
+                req: "modifyText",
+                data: modify
             },
-            dataType:"json",
-            success : function(data){
-                if(data != 'fail'){
+            dataType: "json",
+            success: function (data) {
+                if (data != 'fail') {
                     swal.fire({
-                        title : '수정이 완료되었습니다.',
-                        icon : 'success',
+                        title: '수정이 완료되었습니다.',
+                        icon: 'success',
                         showConfirmButton: true
 
-                    }).then(function (){
+                    }).then(function () {
                         location.reload();
                     });
-                }
-                else
+                } else
                     swal.fire({
-                        title : '서버에러',
-                        text : '다음에 다시 시도해주세요',
-                        icon : 'error',
+                        title: '서버에러',
+                        text: '다음에 다시 시도해주세요',
+                        icon: 'error',
                         showConfirmButton: true
                     });
             }
         })
     }
+
+
 
 </script>
 

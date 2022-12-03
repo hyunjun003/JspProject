@@ -82,7 +82,7 @@
                         </form>
                     </div>
                     <div class="m-b-20">
-                        <p><small>Dont have an account yet? <a href="#">Create account</a><br>Forgot your username or password? <a href="#">Recover account</a></small></p>
+                        <p><small>Dont have an account yet? <a href="signupPage.jpt">Create account</a>
                     </div>
                 </div>
             </div>

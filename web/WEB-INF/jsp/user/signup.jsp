@@ -6,64 +6,26 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.83.1">
-    <title>Signup page</title>
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap" rel="stylesheet">
+    <meta name="author" content="">
+    <title>JspProject</title>
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="../../../assets/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../../assets/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../../assets/images/apple-touch-icon-114x114.png">
+    <!-- Web Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600%7cPlayfair+Display:400i" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- Plugins-->
+    <link href="../../../assets/css/plugins.min.css" rel="stylesheet">
+    <!-- Template core CSS-->
+    <link href="../../../assets/css/template.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css"/>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-    <!-- Libs CSS -->
-    <link rel="stylesheet" href="../../../assets/libs/ion-rangeslider/css/ion.rangeSlider.min.css">
-    <link rel="stylesheet" href="../../../assets/libs/litepicker/dist/css/litepicker.css">
-    <link rel="stylesheet" href="../../../assets/libs/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet"  href="../../../assets/libs/magnific-popup/dist/magnific-popup.css">
-
-    <!-- Theme CSS -->
-    <link rel="stylesheet" href="../../../assets/css/theme.min.css">
-
-    <!-- Libs JS -->
-    <script src="../../../assets/libs/jquery/dist/jquery.min.js"></script>
-    <script src="../../../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../../../assets/libs/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-    <script src="../../../assets/libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
-    <script src="../../../assets/libs/prismjs/prism.js"></script>
-    <script src="../../../assets/libs/leaflet/dist/leaflet.js"></script>
-    <script src="../../../assets/libs/litepicker/dist/litepicker.js"></script>
-    <script src="../../../assets/libs/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
-    <script src="../../../assets/libs/inputmask/dist/jquery.inputmask.min.js"></script>
-
-    <!-- clipboard -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
-    
-    <!-- Theme JS -->
-    <script src="../../../assets/js/theme.min.js"></script>
-
-    <%-- <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/"> --%>
-    <!-- Bootstrap core CSS -->
-    <%--    <link href="../../../assets/dist/css/bootstrap.min.css" rel="stylesheet">--%>
-
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
-        }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-    </style>
-    <!-- Custom styles for this template -->
-    <link href="css/form-validation.css" rel="stylesheet">
 </head>
 <body class="bg-light">
 
@@ -101,7 +63,9 @@
                         <input type="text" class="form-control" id="pw" placeholder="" required="">
                         <div class="invalid-feedback">
                             비밀번호를 입력해주세요.
+
                         </div>
+                        <p>비밀번호는 8~20자리, 공백없이, 영문과 숫자 특수문자를 혼합하여 입력해주세요</p>
                     </div>
                 </div>
                 <button class="w-100 btn btn-dark btn-lg" onclick="signUp()" style="font-family: 'Noto Serif KR', serif; margin-top: 30px;">회원가입 하기</button>
@@ -109,8 +73,12 @@
         </div>
     </div>
 </main>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/form-validation.js"></script>
+<script src="../../../assets/js/custom/jquery.min.js"></script>
+<script src="../../../assets/js/custom/popper.min.js"></script>
+<script src="../../../assets/js/bootstrap/bootstrap.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0rANX07hh6ASNKdBr4mZH0KZSqbHYc3Q"></script>
+<script src="../../../assets/js/custom/plugins.min.js"></script>
+<script src="../../../assets/js/custom/custom.min.js"></script>
 </body>
 
 <script>
@@ -118,6 +86,21 @@
         var name = $('#name').val();
         var id = $('#id').val();
         var pw = $('#pw').val();
+
+        //pw 검사
+        var num = pw.search(/[0-9]/g);
+        var eng = pw.search(/[a-z]/ig);
+        var spe = pw.search(/[`~!@@#$%^&*|₩₩₩'₩";:₩/?]/gi);
+
+        if(pw.length < 8 || pw.length > 20){
+            alert("8자리 ~ 20자리 이내로 입력해주세요.");
+        }else if(pw.search(/\s/) !== -1){
+            alert("비밀번호는 공백 없이 입력해주세요.");
+        }else if(num < 0 || eng < 0 || spe < 0 ){
+            alert("영문,숫자, 특수문자를 혼합하여 입력해주세요.");
+        }else {
+            console.log("통과");
+        }
 
         var data = name + "-/-/-" + id + "-/-/-" + pw;
         var check =

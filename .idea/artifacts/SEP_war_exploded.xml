@@ -8,6 +8,10 @@
           <element id="module-output" name="SEP" />
           <element id="library" level="project" name="bootstrap" />
           <element id="library" level="project" name="appear" />
+          <element id="library" level="application" name="ckeditor" />
+          <element id="library" level="application" name="clipboard.js" />
+          <element id="library" level="application" name="ckeditor5-35" />
+          <element id="library" level="application" name="ko" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Java EE 6-Java EE 6" />

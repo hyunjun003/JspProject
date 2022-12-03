@@ -69,23 +69,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 m-auto text-center">
-                    <h1>Most Popular</h1>
-                    <p class="lead">가장 인기 많은 제품을 확인하세요</p>
+                    <h1>UsinG<br>DeviceS</h1>
+                    <p class="lead">제품의 홈페이지를 확인해보세요</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
                     <div class="space" data-MY="40px"></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <ul class="filters serif">
-                        <li><a class="current" href="#" data-filter="*">All</a></li>
-                        <li><a href="#" data-filter=".branding">Branding</a></li>
-                        <li><a href="#" data-filter=".digital">Digital</a></li>
-                        <li><a href="#" data-filter=".packaging">Packaging</a></li>
-                    </ul>
                 </div>
             </div>
         </div>
@@ -96,48 +86,48 @@
                     <div class="portfolio-item-wrapper">
                         <div class="portfolio-item-img"><img src="assets/images/portfolio/1.jpg" alt=""></div>
                         <div class="portfolio-item-caption">
-                            <h6 class="portfolio-item-title">Solave Cleanser</h6><span class="portfolio-item-subtitle serif">Digital</span>
-                        </div><a class="portfolio-item-link" href="portfolio-single-1.html"></a>
+                            <h6 class="portfolio-item-title">SAMSUNG</h6>
+                        </div><a class="portfolio-item-link" href="https://www.samsung.com/sec/"></a>
                     </div>
                 </div>
                 <div class="portfolio-item digital">
                     <div class="portfolio-item-wrapper">
                         <div class="portfolio-item-img"><img src="../../../assets/images/portfolio/4.jpg" alt=""></div>
                         <div class="portfolio-item-caption">
-                            <h6 class="portfolio-item-title">Monochrome</h6><span class="portfolio-item-subtitle serif">Branding</span>
-                        </div><a class="portfolio-item-link" href="portfolio-single-1.html"></a>
+                            <h6 class="portfolio-item-title">APPLE</h6>
+                        </div><a class="portfolio-item-link" href="https://www.apple.com"></a>
                     </div>
                 </div>
                 <div class="portfolio-item packaging">
                     <div class="portfolio-item-wrapper">
                         <div class="portfolio-item-img"><img src="../../../assets/images/portfolio/3.jpg" alt=""></div>
                         <div class="portfolio-item-caption">
-                            <h6 class="portfolio-item-title">Ellie Cashman</h6><span class="portfolio-item-subtitle serif">Packaging</span>
-                        </div><a class="portfolio-item-link" href="portfolio-single-1.html"></a>
+                            <h6 class="portfolio-item-title">PHILIPS</h6>
+                        </div><a class="portfolio-item-link" href="https://www.philips.co.kr"></a>
                     </div>
                 </div>
                 <div class="portfolio-item branding">
                     <div class="portfolio-item-wrapper">
                         <div class="portfolio-item-img"><img src="../../../assets/images/portfolio/6.jpg" alt=""></div>
                         <div class="portfolio-item-caption">
-                            <h6 class="portfolio-item-title">White Sleeve</h6><span class="portfolio-item-subtitle serif">Digital</span>
-                        </div><a class="portfolio-item-link" href="portfolio-single-1.html"></a>
+                            <h6 class="portfolio-item-title">LG</h6>
+                        </div><a class="portfolio-item-link" href="https://www.lge.co.kr"></a>
                     </div>
                 </div>
                 <div class="portfolio-item digital">
                     <div class="portfolio-item-wrapper">
                         <div class="portfolio-item-img"><img src="../../../assets/images/portfolio/5.jpg" alt=""></div>
                         <div class="portfolio-item-caption">
-                            <h6 class="portfolio-item-title">Classic Socks</h6><span class="portfolio-item-subtitle serif">Branding</span>
-                        </div><a class="portfolio-item-link" href="portfolio-single-1.html"></a>
+                            <h6 class="portfolio-item-title">SONY</h6>
+                        </div><a class="portfolio-item-link" href="https://www.sony.co.kr"></a>
                     </div>
                 </div>
                 <div class="portfolio-item packaging">
                     <div class="portfolio-item-wrapper">
                         <div class="portfolio-item-img"><img src="../../../assets/images/portfolio/2.jpg" alt=""></div>
                         <div class="portfolio-item-caption">
-                            <h6 class="portfolio-item-title">Expirience</h6><span class="portfolio-item-subtitle serif">Packaging</span>
-                        </div><a class="portfolio-item-link" href="portfolio-single-1.html"></a>
+                            <h6 class="portfolio-item-title">AMD</h6>
+                        </div><a class="portfolio-item-link" href="https://www.amd.com/ko"></a>
                     </div>
                 </div>
             </div>

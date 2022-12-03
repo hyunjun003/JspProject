@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Boomerang - Template</title>
+    <title>JspProject</title>
     <!-- Favicons-->
     <link rel="shortcut icon" href="../../../assets/images/favicon.png">
     <link rel="apple-touch-icon" href="../../../assets/images/apple-touch-icon.png">
@@ -62,11 +62,11 @@
                 <div class="col-md-6">
                     <div class="row">
                         <div class="col-md-6">
-                            <h6 class="text-special text-center m-b-40">PC</h6>
+                            <h6 class="text-special text-center m-b-40">Phone</h6>
                             <div id="detail_content"></div>
                         </div>
                         <div class="col-md-6">
-                            <h6 class="text-special text-center m-b-40">Phone</h6>
+                            <h6 class="text-special text-center m-b-40">PC</h6>
                             <div id="detail_content2"></div>
                         </div>
                     </div>
@@ -102,12 +102,13 @@
         makeBoard4();
     })
     var i = 0;
+
     // start make left board리
     function makeBoard() {
         var inDetail = <%=inDetail%>;
         var data = $('#detail_content');
         var text = '';
-        for (i = 0; i<inDetail.length; i++){
+        for (i = 0; i<inDetail.length-3; i++){
             if (inDetail[i].product_id%4===1){
                 text += '<div class="demo-item"><a href="'+inDetail[i].product_page+'?num='+inDetail[i].product_id+'"><img src="'+inDetail[i].product_pic+'" alt=""></a><h6>'+inDetail[i].product_name+'</h6></div>';
                 data.append(text);
@@ -154,8 +155,6 @@
             }
         }
     }
-
-
 </script>
 
 

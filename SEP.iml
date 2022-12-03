@@ -28,5 +28,8 @@
     <orderEntry type="library" name="appear" level="project" />
     <orderEntry type="library" name="clipboard.js" level="application" />
     <orderEntry type="library" name="ckeditor" level="application" />
+    <orderEntry type="library" name="ko" level="application" />
+    <orderEntry type="library" name="ckeditor5-35" level="application" />
+    <orderEntry type="library" name="sweetalert" level="application" />
   </component>
 </module>

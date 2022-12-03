@@ -52,6 +52,7 @@ public class AjaxAction implements Action {
                     return "1";//성공했다는 걸 JSP에게 알려줘야 합니다.
                 }
             case "signup"://회원가입 시 입력된 정보를 한 줄로 보내줍니다.
+
                 result = HomeDAO.getInstance().signUp(data);
 //                System.out.println(data);
                 break;

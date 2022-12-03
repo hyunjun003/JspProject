@@ -15,7 +15,11 @@ public class LoginPageAction implements Action {
         HttpSession session = request.getSession();
         if(session.getAttribute("user") == null) //로그인하지 않은 사용자의 경우에만 로그인 페이지를 띄워줌
             return "RequestDispatcher:jsp/user/login.jsp";
-        else //이미 로그인 한 사용자의 경우 비정상적인 요청으로 간주하고 error화면으로 돌려보냄.
-            return "RequestDispatcher:jsp/page/error.jsp";
+        else{
+            response.sendRedirect("logout.jpt");
+            return null;
+        }
+
+
     }
 }

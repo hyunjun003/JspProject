@@ -1,3 +1,4 @@
+<%--
 <!-- Off canvas-->
 <div class="off-canvas-sidebar">
     <div class="off-canvas-sidebar-wrapper">
@@ -35,3 +36,4 @@
     </div>
 </div>
 <!-- Off canvas end-->
+--%>

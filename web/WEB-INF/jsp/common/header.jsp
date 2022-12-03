@@ -51,57 +51,10 @@
         <!-- Brand-->
         <div class="inner-header"><a class="inner-brand" href="main.jpt">K_gu</a></div>
         <!-- Navigation-->
-        <div class="inner-navigation collapse">
-            <div class="inner-nav">
-                <ul>
-                    <li class="menu-item-has-children menu-item-has-mega-menu"><a href="#"><span class="menu-item-span">Home</span></a>
-                        <div class="mega-menu">
-                            <ul class="sub-menu mega-menu-row" data-background="assets/images/menu-3.jpg">
-                                <!-- Column 1-->
-                                <li class="menu-item-has-children mega-menu-col"><a href="#">Multi Page</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="detail.jpt">detail</a></li>
-                                        <li><a href="in.jpt">in</a></li>
-                                        <li><a href="default.jpt">default</a></li>
-                                    </ul>
-                                </li>
-                                <!-- Column 2-->
-                                <li class="menu-item-has-children mega-menu-col"><a href="#">One Page</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="#">Demo</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="menu-item-has-children menu-item-has-mega-menu"><a href="#"><span class="menu-item-span">Pages</span></a>
-                        <div class="mega-menu">
-                            <ul class="sub-menu mega-menu-row" data-background="assets/images/menu-1.jpg">
-                                <!-- Column 1-->
-                                <li class="menu-item-has-children mega-menu-col"><a href="#">Pages 1</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="#">Demo2</a></li>
-                                    </ul>
-                                </li>
-                                <!-- Column 2-->
-                                <li class="menu-item-has-children mega-menu-col"><a href="#">Pages 2</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="#">Demo3</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
         <div class="extra-nav">
             <ul>
                 <li><a href="loginPage.jpt" id="login"></a></li>
-                <li><a class="off-canvas-open" href="#"><span class="menu-item-span"><i class="ti-menu"></i></span></a>
-                </li>
-                <li class="nav-toggle"><a href="#" data-toggle="collapse" data-target=".inner-navigation"><span
-                        class="menu-item-span"><i class="ti-menu"></i></span></a></li>
+
             </ul>
         </div>
     </div>
